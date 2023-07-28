@@ -19,7 +19,8 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'jacoco'
 
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
+//sourceCompatibility = 1.8
+sourceCompatibility = 11
 
 repositories {
 	mavenCentral()
@@ -35,6 +36,7 @@ dependencies {
 	runtime('org.springframework.boot:spring-boot-devtools')
 	compile 'org.webjars:bootstrap:3.3.7-1'
 	compileOnly('org.projectlombok:lombok')
+	annotationProcessor 'org.projectlombok:lombok'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
